@@ -150,19 +150,26 @@ body {
 }
 
 /* Correcciones para evitar que botones queden marcados en móviles */
+
 .item {
-    -webkit-tap-highlight-color: transparent;
-    /* Evita parpadeo gris en móviles */
-    outline: none;
+  -webkit-tap-highlight-color: transparent; /* Elimina parpadeo gris al tocar */
+  outline: none; /* Elimina el contorno */
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .item:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.item:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 .item:active {
-    background-color: #3251c1;
-    transform: scale(1.1);
-    border-radius: 10px;
+  background-color: #3251c1;
+  transform: scale(1.1);
+  border-radius: 10px;
 }
