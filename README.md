@@ -17,13 +17,13 @@ Una calculadora web sencilla desarrollada con **HTML**, **CSS** y **JavaScript**
 
 ---
 
-## 🚀 Demo en vivo
+##  Demo en vivo
 
-👉 [https://cris1277.github.io/calculator/](https://cris1277.github.io/calculator/)
+ [https://cris1277.github.io/calculator/](https://cris1277.github.io/calculator/)
 
 ---
 
-## 🛠️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 
 - HTML5
 - CSS3 (con `@media` queries para adaptabilidad)
@@ -34,7 +34,7 @@ Una calculadora web sencilla desarrollada con **HTML**, **CSS** y **JavaScript**
 ##  Estructura de archivos
 
 ```
-📦 calculator/
+  calculator/
 ├── index.html         # Estructura de la calculadora
 ├── styles.css         # Estilos visuales y ajustes móviles
 ├── index.js           # Lógica funcional de la calculadora
@@ -43,7 +43,7 @@ Una calculadora web sencilla desarrollada con **HTML**, **CSS** y **JavaScript**
 
 ---
 
-## ✅ Cómo usar
+##  Cómo usar
 
 1. Clona el repositorio:
 
@@ -56,7 +56,7 @@ cd calculator
 
 ---
 
-## 📱 Compatibilidad
+##  Compatibilidad
 
 - Navegadores modernos (Chrome, Firefox, Safari, Edge, Brave)
 - Dispositivos móviles (Android / iOS)
@@ -70,7 +70,7 @@ Desarrollado por **Cristian Serrano**
 
 ---
 
-## 📖 Licencia
+##  Licencia
 
 Este proyecto está bajo la licencia **MIT**.  
 Puedes usarlo, modificarlo y compartirlo libremente.
