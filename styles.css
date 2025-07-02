@@ -1,56 +1,51 @@
-.item,
-body {
-    font-weight: 700
-}
-
-.layout__footer p,
-h1 {
-    text-shadow: 0 0 2px #000,
-                  1px 1px 4px #000, 2px 2px 6px #000, 3px 3px 8px #000, 4px 4px 10px #000, 5px 5px 12px #000, 6px 6px 14px #000
-}
-
+/* =====================
+   RESET Y ESTILOS GLOBALES
+   ===================== */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
-body,
-html {
+html,
+body {
     height: 100%;
     display: flex;
-    flex-direction: column
-}
-
-body {
-    background-color: gray;
+    flex-direction: column;
     font-family: Poppins, sans-serif;
-    font-size: 20px
+    font-size: 20px;
+    font-weight: 700;
+    background-color: gray;
 }
 
+/* =====================
+   SOMBRA DE TEXTO PARA H1 Y FOOTER
+   ===================== */
+h1,
+.layout__footer p {
+    text-shadow: 0 0 2px #000,
+                 1px 1px 4px #000,
+                 2px 2px 6px #000,
+                 3px 3px 8px #000,
+                 4px 4px 10px #000,
+                 5px 5px 12px #000,
+                 6px 6px 14px #000;
+}
+
+/* =====================
+   LAYOUT GENERAL
+   ===================== */
 .layout {
     display: flex;
     flex-direction: column;
-    min-height: 100vh
+    min-height: 100vh;
 }
 
 .layout__header {
     background-color: #4caf50;
     text-align: center;
     padding: 1rem;
-    color: #fff
-}
-
-.math-facts {
-    margin-top: 1rem;
-    padding: .5rem 1rem;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-style: italic;
-    color: #333;
-    text-align: center
+    color: #fff;
 }
 
 .layout__main {
@@ -60,28 +55,71 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    opacity: .8;
-    background-image: linear-gradient(#000dff 1px, transparent 1px), linear-gradient(to right, #000dff 1px, #fff 1px);
-    background-size: 20px 20px
+    opacity: 0.8;
+    background-image: linear-gradient(#000dff 1px, transparent 1px),
+                      linear-gradient(to right, #000dff 1px, #fff 1px);
+    background-size: 20px 20px;
 }
 
+.layout__footer {
+    padding: 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+}
+
+/* =====================
+   COMPONENTE: FRASE MATEMÁTICA
+   ===================== */
+.math-facts {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #333;
+    text-align: center;
+}
+
+/* =====================
+   COMPONENTE: CALCULADORA
+   ===================== */
 .container__calculator {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 0 0 2px #000, 1px 1px 4px #000, 2px 2px 6px #000, 3px 3px 8px #000, 4px 4px 10px #000, 5px 5px 12px #000, 6px 6px 14px #000, 7px 7px 16px #000, 8px 8px 18px #000;
-    transition: .3s
+    margin: 50px 0;
+    box-shadow: 0 0 2px #000,
+                1px 1px 4px #000,
+                2px 2px 6px #000,
+                3px 3px 8px #000,
+                4px 4px 10px #000,
+                5px 5px 12px #000,
+                6px 6px 14px #000,
+                7px 7px 16px #000,
+                8px 8px 18px #000;
+    transition: 0.3s;
 }
 
 .container__calculator:hover {
-    box-shadow: 0 0 2px #338a36, 1px 1px 4px #338a36, 2px 2px 6px #338a36, 3px 3px 8px #338a36, 4px 4px 10px #338a36, 5px 5px 12px #338a36, 6px 6px 14px #338a36, 7px 7px 16px #338a36, 8px 8px 18px #338a36
+    box-shadow: 0 0 2px #338a36,
+                1px 1px 4px #338a36,
+                2px 2px 6px #338a36,
+                3px 3px 8px #338a36,
+                4px 4px 10px #338a36,
+                5px 5px 12px #338a36,
+                6px 6px 14px #338a36,
+                7px 7px 16px #338a36,
+                8px 8px 18px #338a36;
 }
 
+/* =====================
+   RESULTADO DE LA CALCULADORA
+   ===================== */
 .calculator__result {
     display: flex;
     justify-content: right;
-    flex-wrap: wrap;
-    overflow: hidden;
     align-items: center;
+    flex-wrap: wrap;
     background-color: #505353;
     width: 300px;
     height: 100px;
@@ -89,87 +127,85 @@ body {
     text-align: right;
     font-size: 30px;
     color: #fff;
-    padding-right: 20px
+    padding-right: 20px;
+    overflow: hidden;
 }
 
-.item,
-.layout__footer {
-    text-align: center;
-    color: #fff
-}
-
+/* =====================
+   BOTONES DE LA CALCULADORA
+   ===================== */
 .calculator__items {
     background-color: brown;
     width: 300px;
     height: 385px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    overflow: hidden
+    overflow: hidden;
 }
 
 .item {
     border: 2px solid #fff;
     background-color: #5976dd;
-    transition: .1s
+    transition: 0.1s;
+    text-align: center;
+    color: #fff;
 }
 
+/* =====================
+   INTERACCIONES DEL BOTÓN
+   ===================== */
 .item:hover {
     cursor: pointer;
     transform: scale(1.1);
     border-radius: 10px;
-    background-color: #3251c1
-}
-
-.layout__footer {
-    padding: 1rem;
-    background-color: #4caf50
-}
-
-@media (min-width:1026px) {
-    .layout__header {
-        min-height: 200px
-    }
-}
-
-@media (max-width:1025px) {
-    .layout__header {
-        min-height: 200px
-    }
-}
-
-@media (max-width:768px) {
-    .layout__header {
-        min-height: 250px
-    }
-}
-
-@media (max-width:450px) {
-    .layout__header {
-        min-height: 320px
-    }
-}
-
-/* Correcciones para evitar que botones queden marcados en móviles */
-
-.item {
-  -webkit-tap-highlight-color: transparent; /* Elimina parpadeo gris al tocar */
-  outline: none; /* Elimina el contorno */
-  -webkit-appearance: none;
-  appearance: none;
-}
-
-.item:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.item:focus-visible {
-  outline: none;
-  box-shadow: none;
+    background-color: #3251c1;
 }
 
 .item:active {
-  background-color: #3251c1;
-  transform: scale(1.1);
-  border-radius: 10px;
+    background-color: #3251c1;
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* =====================
+   ACCESIBILIDAD Y FIXES TÁCTILES
+   ===================== */
+.item {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.item:focus,
+.item:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+/* =====================
+   MEDIA QUERIES RESPONSIVE
+   ===================== */
+@media (min-width: 1026px) {
+    .layout__header {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .layout__header {
+        min-height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout__header {
+        min-height: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    .layout__header {
+        min-height: 320px;
+    }
 }
