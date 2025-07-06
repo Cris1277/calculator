@@ -1,77 +1,77 @@
 # 🧮 Calculator JS
 
-Una **calculadora web** sencilla desarrollada con **HTML**, **CSS** y **JavaScript** puro.  
-Incluye funciones básicas, memoria, porcentaje, raíz cuadrada y un toque educativo con datos curiosos matemáticos que se actualizan automáticamente.
+A **simple web calculator** built using **HTML**, **CSS**, and **pure JavaScript**.  
+It includes basic operations, memory, percentage, square root, and an educational touch with automatically updated math facts.
 
 ---
 
-## ✨ Características
+## ✨ Features
 
-- ➕➖✖️➗ Operaciones básicas: suma, resta, multiplicación, división  
-- % Porcentaje  
-- √ Raíz cuadrada  
-- 💾 Memoria (M): guarda y recupera un valor  
-- 🔢 Soporte para coma decimal y entrada con teclado  
-- 📱 Responsive: funciona en escritorio y móviles  
-- 🎨 Diseño visual interactivo  
-- 📚 Datos curiosos matemáticos que se actualizan cada 6 segundos
-
----
-
-## 🔗 Demo en vivo
-
-🌐 [Ver calculadora online](https://cris1277.github.io/calculator/)
+- ➕➖✖️➗ Basic operations: addition, subtraction, multiplication, division  
+- % Percentage  
+- √ Square root  
+- 💾 Memory (M): save and retrieve values  
+- 🔢 Decimal support and keyboard input  
+- 📱 Responsive: works on desktop and mobile  
+- 🎨 Interactive visual design  
+- 📚 Fun math facts auto-refresh every 6 seconds
 
 ---
 
-## 🧩 Tecnologías utilizadas
+## 🔗 Live Demo
+
+🌐 [Try the calculator online](https://cris1277.github.io/calculator/)
+
+---
+
+## 🧩 Tech Stack
 
 - 🧱 **HTML5**
-- 🎨 **CSS3** (con `@media` queries para adaptabilidad)
-- ⚙️ **JavaScript** (vanilla JS, sin frameworks)
+- 🎨 **CSS3** (with `@media` queries for responsiveness)
+- ⚙️ **JavaScript** (vanilla JS, no frameworks)
 
 ---
 
-## 📁 Estructura del proyecto
+## 📁 Project Structure
 
 ```
 📦 calculator/
-├── index.html         # 📄 Estructura de la calculadora
-├── styles.css         # 🎨 Estilos visuales y ajustes móviles
-├── index.js           # ⚙️ Lógica funcional de la calculadora
-└── README.md          # 📝 Información del proyecto
+├── index.html         # 📄 Calculator structure
+├── styles.css         # 🎨 Visual styles and mobile adjustments
+├── index.js           # ⚙️ Functional logic
+└── README.md          # 📝 Project info
 ```
 
 ---
 
-## ⚙️ Cómo usar
+## ⚙️ How to Use
 
-1. Clona el repositorio:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/cris1277/calculator.git
 cd calculator
 ```
 
-2. Abre `index.html` en tu navegador favorito. ✅
+2. Open `index.html` in your favorite browser. ✅
 
 ---
 
-## 🌍 Compatibilidad
+## 🌍 Compatibility
 
-- 💻 Navegadores modernos (Chrome, Firefox, Safari, Edge, Brave)
-- 📱 Dispositivos móviles (Android / iOS)
-
----
-
-## 👨‍💻 Autor
-
-Desarrollado por **Cristian Serrano**  
-© 2025 — Todos los derechos reservados.
+- 💻 Modern browsers (Chrome, Firefox, Safari, Edge, Brave)
+- 📱 Mobile devices (Android / iOS)
 
 ---
 
-## 📝 Licencia
+## 👨‍💻 Author
 
-Este proyecto está bajo la licencia **MIT**.  
-Puedes usarlo, modificarlo y compartirlo libremente ✅
+Developed by **Cristian Serrano**  
+© 2025 — All rights reserved.
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT** license.  
+You are free to use, modify, and share it. ✅
